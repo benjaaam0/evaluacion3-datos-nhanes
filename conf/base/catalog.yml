@@ -1,0 +1,28 @@
+demo_raw:
+  type: pandas.GenericDataset
+  filepath: data/01_raw/DEMO_J.xpt
+  file_format: sas
+  load_args:
+    format: xport
+
+bmx_raw:
+  type: pandas.GenericDataset
+  filepath: data/01_raw/BMX_J.xpt
+  file_format: sas
+  load_args:
+    format: xport
+
+bpx_raw:
+  type: pandas.GenericDataset
+  filepath: data/01_raw/BPX_J.xpt
+  file_format: sas
+  load_args:
+    format: xport
+
+clima_api_intermediate:
+  type: pandas.ParquetDataset
+  filepath: data/02_intermediate/clima_api.parquet
+
+categorias_sql_intermediate:
+  type: pandas.ParquetDataset
+  filepath: data/02_intermediate/categorias_sql.parquet
