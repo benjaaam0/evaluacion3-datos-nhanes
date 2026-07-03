@@ -26,3 +26,7 @@ clima_api_intermediate:
 categorias_sql_intermediate:
   type: pandas.ParquetDataset
   filepath: data/02_intermediate/categorias_sql.parquet
+
+modelo_hipertension:
+  type: pickle.PickleDataset
+  filepath: data/06_models/modelo_final.pkl
